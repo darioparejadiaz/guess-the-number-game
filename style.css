@@ -1,0 +1,186 @@
+/* ******************************************************* */
+/* ******************************************************* */
+/* ******************************************************* */
+
+:root {
+  --black-bg: #222222;
+  --black-modal: #636161;
+  --green-bg: #42a37f;
+  --red-bg: #ff865b;
+}
+
+/* ******************************************************* */
+/* ******************************************************* */
+/* ******************************************************* */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DotGothic16", sans-serif;
+  color: white;
+}
+
+/* ******************************************************* */
+/* ******************************************************* */
+/* ******************************************************* */
+
+.header {
+  padding: 8px 16px;
+  border-bottom: 2px solid white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  padding: 12px;
+  border: none;
+
+  font-family: "DotGothic16", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn:active {
+  position: relative;
+  top: 1px;
+  background-color: lightslategray;
+}
+
+.high-score-container {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 16px;
+}
+
+.trophy-img {
+  width: 24px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg)
+    brightness(102%) contrast(102%);
+}
+
+/* ******************************************************* */
+/* ******************************************************* */
+/* ******************************************************* */
+
+.display-section {
+  width: 90%;
+  border: 2px solid white;
+  border-top: none;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.guess-number {
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  color: black;
+
+  font-size: 80px;
+
+  display: grid;
+  place-items: center;
+
+  margin: 0 auto;
+
+  transform: translateY(75px);
+}
+
+/* ******************************************************* */
+/* ******************************************************* */
+/* ******************************************************* */
+
+.controls-section {
+  height: 50vh;
+
+  display: grid;
+  place-items: center;
+}
+
+.controls-container {
+  display: grid;
+  gap: 20px;
+}
+
+.input {
+  padding: 12px;
+  text-align: center;
+
+  font-family: "DotGothic16", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* ******************************************************* */
+/* ******************************************************* */
+/* ******************************************************* */
+
+.footer {
+  border-top: 2px solid white;
+}
+
+.score-container {
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+  border: 2px solid white;
+
+  margin: 0 auto;
+
+  transform: translateY(-50px);
+}
+
+/* ******************************************************* */
+/* ******************************************************* */
+/* ******************************************************* */
+
+.modal-container {
+  backdrop-filter: blur(10px);
+
+  position: absolute;
+  z-index: 2;
+
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  display: grid;
+  place-items: center;
+}
+
+.modal-window {
+  padding: 32px;
+  border-radius: 10px;
+  background-color: var(--black-modal);
+
+  display: grid;
+  gap: 12px;
+}
+
+/* ******************************************************* */
+/* ******************************************************* */
+/* ******************************************************* */
+
+.black-bg {
+  background-color: var(--black-bg);
+}
+
+.red-bg {
+  background-color: var(--red-bg);
+}
+
+.green-bg {
+  background-color: var(--green-bg);
+}
+
+.inactive {
+  display: none;
+}

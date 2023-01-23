@@ -1,0 +1,90 @@
+<!-- ****************************************************************** -->
+<!-- ****************************************************************** -->
+<!-- ****************************************************************** -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the number</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <!-- ****************************************************************** -->
+  <!-- ****************************************************************** -->
+  <!-- ****************************************************************** -->
+  <body class="black-bg">
+    <!-- ********************************** -->
+    <!-- ********************************** -->
+
+    <header class="header">
+      <!--  -->
+      <button class="btn" id="new-game-btn">New game</button>
+      <!--  -->
+      <div class="high-score-container">
+        <img src="./assets/trophy-sharp.svg" class="trophy-img" />
+        <span>Highest score:</span>
+        <span class="high-score" id="high-score"></span>
+        <span class="player-name-record" id="player-name-record"></span>
+      </div>
+      <!--  -->
+    </header>
+
+    <!-- ********************************** -->
+    <!-- ********************************** -->
+
+    <section class="display-section">
+      <h1 class="title">Guess my number!</h1>
+      <p class="message" id="message-display"></p>
+      <p class="guess-number" id="guess-number"></p>
+    </section>
+
+    <!-- ********************************** -->
+    <!-- ********************************** -->
+
+    <section class="controls-section">
+      <div class="controls-container">
+        <input type="number" class="input" id="input-number" />
+        <button class="btn" id="check-btn">Check</button>
+      </div>
+    </section>
+
+    <!-- ********************************** -->
+    <!-- ********************************** -->
+
+    <footer class="footer">
+      <div class="score-container black-bg" id="score-container">
+        <p>Current Score: <span id="current-score"></span></p>
+        <p>Attempts left: <span id="attempts-left"></span></p>
+      </div>
+    </footer>
+
+    <!-- ********************************** -->
+    <!-- ********************************** -->
+
+    <div class="modal-container inactive" id="modal-container">
+      <div class="modal-window" id="modal-window">
+        <label for="player-name">New High Score!! Write your name:</label>
+        <input type="text" class="input" id="player-name" autocomplete="off" />
+        <button class="btn" id="save-name-btn">Save</button>
+      </div>
+    </div>
+
+    <!-- ********************************** -->
+    <!-- ********************************** -->
+
+    <script src="./main.js"></script>
+  </body>
+</html>
+
+<!-- ****************************************************************** -->
+<!-- ****************************************************************** -->
+<!-- ****************************************************************** -->
